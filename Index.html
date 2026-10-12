@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eznl Transporting Limited | Professional Freight & Logistics Solutions</title>
+    <meta name="description" content="Eznl Transporting Limited provides reliable haulage, heavy equipment freight, and logistics across the nation. Call 08037131524 for fast quote.">
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-navy: #0f172a;
+            --secondary-blue: #1e3a8a;
+            --accent-amber: #f59e0b;
+            --accent-amber-hover: #d97706;
+            --dark-surface: #1e293b;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --radius-lg: 16px;
+            --radius-md: 10px;
+            --shadow-md: 0 10px 30px -10px rgba(15, 23, 42, 0.15);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--primary-navy);
+            color: rgba(255, 255, 255, 0.85);
+            padding: 8px 5%;
+            font-size: 0.88rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .top-info {
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-info i {
+            color: var(--accent-amber);
+        }
+
+        /* Navigation */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--secondary-blue), var(--primary-navy));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-amber);
+            font-size: 1.4rem;
+        }
+
+        .logo-text h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--primary-navy);
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+        }
+
+        .logo-text span {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-amber);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-blue);
+        }
+
+        .btn {
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-size: 0.95rem;
+        }
+
+        .btn-amber {
+            background-color: var(--accent-amber);
+            color: var(--primary-navy);
+        }
+
+        .btn-amber:hover {
+            background-color: var(--accent-amber-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-navy {
+            background-color: var(--primary-navy);
+            color: var(--white);
+        }
+
+        .btn-navy:hover {
+            background-color: var(--secondary-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(30, 58, 138, 0.85)), 
+                        url('https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            padding: 100px 5% 120px;
+            color: var(--white);
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-container {
+            max-width: 1300px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h2 span {
+            color: var(--accent-amber);
+        }
+
+        .hero-content p {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.88);
+            margin-bottom: 30px;
+            max-width: 580px;
+        }
+
+        .hero-features {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        .hero-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-badge i {
+            color: var(--accent-amber);
+        }
+
+        /* Quote Form Card */
+        .quote-card {
+            background: var(--white);
+            padding: 32px;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+            color: var(--text-dark);
+        }
+
+        .quote-card h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-navy);
+            margin-bottom: 6px;
+        }
+
+        .quote-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--primary-navy);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary-blue);
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .calc-result {
+            background: #f1f5f9;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-align: center;
+            border: 1px dashed #cbd5e1;
+        }
+
+        .calc-result span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .calc-result strong {
+            font-size: 1.3rem;
+            color: var(--secondary-blue);
+        }
+
+        /* Features/Stats Bar */
+        .stats-section {
+            background: var(--white);
+            padding: 40px 5%;
+            box-shadow: var(--shadow-md);
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: var(--radius-lg);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item h4 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--secondary-blue);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        /* Section Layout */
+        .section-padding {
+            padding: 90px 5%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 50px;
+        }
+
+        .section-header .tag {
+            color: var(--accent-amber);
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .section-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.3rem;
+            color: var(--primary-navy);
+            font-weight: 800;
+            line-height: 1.25;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 35px 28px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            border-color: var(--secondary-blue);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(30, 58, 138, 0.08);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            color: var(--secondary-blue);
+            margin-bottom: 22px;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--primary-navy);
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Fleet Section */
+        .fleet-filter {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            border-radius: 30px;
+            border: 1px solid var(--border-color);
+            background: var(--white);
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-navy);
+            color: var(--white);
+            border-color: var(--primary-navy);
+        }
+
+        .fleet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+        }
+
+        .fleet-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .fleet-img {
+            height: 210px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .fleet-body {
+            padding: 24px;
+        }
+
+        .fleet-body h3 {
+            font-size: 1.2rem;
+            color: var(--primary-navy);
+            margin-bottom: 10px;
+        }
+
+        .fleet-specs {
+            display: flex;
+            justify-content: space-between;
+            background: var(--light-bg);
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+        }
+
+        /* Call To Action Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary-navy), var(--secondary-blue));
+            border-radius: var(--radius-lg);
+            padding: 60px 40px;
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+        }
+
+        .cta-banner p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* Testimonials */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 28px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+        }
+
+        .stars {
+            color: var(--accent-amber);
+            margin-bottom: 12px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .client-info h5 {
+            font-weight: 700;
+            color: var(--primary-navy);
+        }
+
+        .client-info span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-navy);
+            color: var(--white);
+            padding: 70px 5% 30px;
+        }
+
+        .footer-grid {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-about p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 15px;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: var(--accent-amber);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            max-width: 1300px;
+            margin: 30px auto 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Floating Action Buttons */
+        .floating-actions {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .float-whatsapp {
+            background-color: #25d366;
+        }
+
+        .float-phone {
+            background-color: var(--secondary-blue);
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Mobile Styling */
+        @media (max-width: 992px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                display: none;
+            }
+            .nav-links {
+                display: none; /* Can be toggled */
+            }
+            .hero-content h2 {
+                font-size: 2.3rem;
+            }
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-banner h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="top-info">
+            <span><i class="fa-solid fa-phone"></i> <strong>Call Us:</strong> 08037131524</span>
+            <span><i class="fa-solid fa-clock"></i> 24/7 Dispatch Available</span>
+            <span><i class="fa-solid fa-shield-halved"></i> 100% Goods In Transit Insured</span>
+        </div>
+        <div>
+            <span><i class="fa-solid fa-location-dot"></i> Nationwide Logistics Services</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-truck-moving"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>EZNL</h1>
+                    <span>TRANSPORTING LTD</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#calculator">Rate Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="tel:08037131524" class="btn btn-amber"
+                <i class="fa-solid fa-phone"></i> 08037131524
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-features">
+                    <div class="hero-badge"><i class="fa-solid fa-circle-check"></i> Licensed Freight Carrier</div>
+                    <div class="hero-badge"><i class="fa-solid fa-circle-check"></i> Timely & Secure Delivery</div>
+                </div>
+                <h2>Heavy Haulage & Nationwide <span>Freight Solutions</span></h2>
+                <p>Eznl Transporting Limited is your trusted logistics partner. From full truckloads to commercial site logistics, we transport your freight safely and right on schedule.</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                    <a href="https://wa.me/2348037131524?text=Hello%20Eznl%20Transporting%20Limited,%20I%20would%20like%20to%20request%20a%20truck%20booking." target="_blank" class="btn btn-amber" style="padding: 14px 28px; font-size: 1rem;">
+                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <a href="tel:08037131524" class="btn btn-navy" style="padding: 14px 28px; font-size: 1rem; border: 1px solid rgba(255,255,255,0.3);">
+                        <i class="fa-solid fa-headset"></i> Call Dispatch Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Instant Freight Quote Form -->
+            <div class="quote-card" id="calculator">
+                <h3>Request Instant Quote</h3>
+                <p>Get a quick haulage estimate for your cargo</p>
+                
+                <form id="quoteForm">
+                    <div class="form-group">
+                        <label>Pickup Location</label>
+                        <input type="text" id="pickup" class="form-control" placeholder="e.g. Lagos Port, Ikeja" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Destination Location</label>
+                        <input type="text" id="destination" class="form-control" placeholder="e.g. Abuja, Port Harcourt, Kano" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Truck Type Needed</label>
+                            <select id="truckType" class="form-control" onchange="calculateEstimate()">
+                                <option value="flatbed">30 Ton Flatbed</option>
+                                <option value="trailer">45 Ton Trailer</option>
+                                <option value="tipper">Heavy Tipper Truck</option>
+                                <option value="box">Box / Covered Truck</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Cargo Weight (Tons)</label>
+                            <input type="number" id="weight" class="form-control" placeholder="Tons" value="15" oninput="calculateEstimate()">
+                        </div>
+                    </div>
+
+                    <div class="calc-result">
+                        <span>Estimated Route Range Cost</span>
+                        <strong id="estimatedPrice">Contact Direct for Accurate Rate</strong>
+                    </div>
+
+                    <button type="button" onclick="sendWhatsAppQuote()" class="btn btn-amber" style="width: 100%; margin-top: 15px; justify-content: center; padding: 12px;">
+                        <i class="fa-brands fa-whatsapp"></i> Send Booking via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h4>100%</h4>
+                <p>On-Time Deliveries</p>
+            </div>
+            <div class="stat-item">
+                <h4>50+</h4>
+                <p>Heavy Fleet Capacity</p>
+            </div>
+            <div class="stat-item">
+                <h4>36 State</h4>
+                <p>Nationwide Coverage</p>
+            </div>
+            <div class="stat-item">
+                <h4>24/7</h4>
+                <p>Customer Support</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section-padding" id="about">
+        <div class="section-header">
+            <span class="tag">Why Choose Eznl Transporting</span>
+            <h2>Driven by Integrity, Powered by Reliability</h2>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div style="background: var(--white); padding: 30px; border-radius: var(--radius-lg); border-left: 4px solid var(--accent-amber);">
+                <i class="fa-solid fa-shield-halved" style="font-size: 2rem; color: var(--secondary-blue); margin-bottom: 15px;"></i>
+                <h3 style="margin-bottom: 10px; color: var(--primary-navy);">Goods In Transit Insurance</h3>
+                <p style="color: var(--text-muted);">Your cargo is valuable. We carry comprehensive goods-in-transit insurance protection on every shipment we process.</p>
+            </div>
+            <div style="background: var(--white); padding: 30px; border-radius: var(--radius-lg); border-left: 4px solid var(--secondary-blue);">
+                <i class="fa-solid fa-user-check" style="font-size: 2rem; color: var(--secondary-blue); margin-bottom: 15px;"></i>
+                <h3 style="margin-bottom: 10px; color: var(--primary-navy);">Experienced Drivers</h3>
+                <p style="color: var(--text-muted);">Our long-distance truck drivers undergo rigorous safety checks and possess years of highway haulage experience.</p>
+            </div>
+            <div style="background: var(--white); padding: 30px; border-radius: var(--radius-lg); border-left: 4px solid var(--accent-amber);">
+                <i class="fa-solid fa-clock-rotate-left" style="font-size: 2rem; color: var(--secondary-blue); margin-bottom: 15px;"></i>
+                <h3 style="margin-bottom: 10px; color: var(--primary-navy);">Real-Time Updates</h3>
+                <p style="color: var(--text-muted);">Stay informed throughout the trip. Get live location calls and arrival notifications directly from our dispatch control.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding" id="services" style="background: #f1f5f9;">
+        <div class="section-header">
+            <span class="tag">What We Do</span>
+            <h2>Our Core Transport Solutions</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                <h3>Heavy Equipment Transport</h3>
+                <p>Hauling machinery, industrial equipment, construction tools, and oversized items safely across state lines.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+                <h3>Interstate Freight Transport</h3>
+                <p>Dedicated full truckload (FTL) services connecting major commercial hubs and industrial zones nationwide.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-warehouse"></i></div>
+                <h3>Port & Terminal Clearance Haulage</h3>
+                <p>Fast evacuation of containers and bulk shipments directly from ports to your warehouses and factory yards.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-truck-droplet"></i></div>
+                <h3>Bulk Material Supply</h3>
+                <p>Reliable movement of raw aggregates, building supplies, sand, gravel, and agricultural produce in bulk.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h3>Corporate Fleet Contract Leasing</h3>
+                <p>Long-term customized haulage partnerships tailored for corporate manufacturers and distribution companies.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Express Emergency Dispatch</h3>
+                <p>Need a vehicle fast? Our rapid response team arranges emergency heavy truck transport with short notice.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Showcase -->
+    <section class="section-padding" id="fleet">
+        <div class="section-header">
+            <span class="tag">Our Equipment</span>
+            <h2>Heavy Utility Vehicles Ready For Dispatch</h2>
+        </div>
+
+        <div class="fleet-filter">
+            <button class="filter-btn active" onclick="filterFleet('all')">All Fleet</button>
+            <button class="filter-btn" onclick="filterFleet('flatbed')">Flatbeds & Trailers</button>
+            <button class="filter-btn" onclick="filterFleet('tipper')">Tippers</button>
+            <button class="filter-btn" onclick="filterFleet('box')">Box Trucks</button>
+        </div>
+
+        <div class="fleet-grid">
+            <div class="fleet-card" data-category="flatbed">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" class="fleet-img" alt="30 Ton Flatbed Truck">
+                <div class="fleet-body">
+                    <h3>30-40 Ton Heavy Flatbed Trailer</h3>
+                    <div class="fleet-specs">
+                        <span><i class="fa-solid fa-weight-hanging"></i> Capacity: 40 Tons</span>
+                        <span><i class="fa-solid fa-ruler"></i> Deck: 40-45ft</span>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">Ideal for steel coils, containers, pipes, heavy machinery, and bagged cement.</p>
+                    <a href="tel:08037131524" class="btn btn-navy" style="width: 100%; justify-content: center;"><i class="fa-solid fa-phone"></i> Book Flatbed</a>
+                </div>
+            </div>
+
+            <div class="fleet-card" data-category="tipper">
+                <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=600&q=80" class="fleet-img" alt="Heavy Tipper Truck">
+                <div class="fleet-body">
+                    <h3>30 Ton Commercial Tipper Truck</h3>
+                    <div class="fleet-specs">
+                        <span><i class="fa-solid fa-weight-hanging"></i> Capacity: 30 Tons</span>
+                        <span><i class="fa-solid fa-cubes"></i> Volume: 20m³</span>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">Ideal for quarry aggregate movement, site clearing, granite, sand, and minerals.</p>
+                    <a href="tel:08037131524" class="btn btn-navy" style="width: 100%; justify-content: center;"><i class="fa-solid fa-phone"></i> Book Tipper</a>
+                </div>
+            </div>
+
+            <div class="fleet-card" data-category="box">
+                <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" class="fleet-img" alt="Covered Freight Truck">
+                <div class="fleet-body">
+                    <h3>Heavy Duty Enclosed Box Truck</h3>
+                    <div class="fleet-specs">
+                        <span><i class="fa-solid fa-weight-hanging"></i> Capacity: 15-25 Tons</span>
+                        <span><i class="fa-solid fa-lock"></i> Weather Protected</span>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">Perfect for weather-sensitive goods, retail supplies, pharmaceuticals, and FMCG cargo.</p>
+                    <a href="tel:08037131524" class="btn btn-navy" style="width: 100%; justify-content: center;"><i class="fa-solid fa-phone"></i> Book Enclosed Truck</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section style="padding: 0 5% 90px; max-width: 1300px; margin: 0 auto;">
+        <div class="cta-banner">
+            <h2>Need a Truck Dispatched Immediately?</h2>
+            <p>Speak directly with the owner and operational manager of <strong>Eznl Transporting Limited</strong> right now for fast pricing and route availability.</p>
+            <div class="cta-buttons">
+                <a href="tel:08037131524" class="btn btn-amber" style="padding: 15px 32px; font-size: 1.1rem;">
+                    <i class="fa-solid fa-phone-volume"></i> Call 08037131524
+                </a>
+                <a href="https://wa.me/2348037131524?text=Hello%20Eznl%20Transporting%20Limited,%20I%20have%20an%20urgent%20haulage%20inquiry." target="_blank" class="btn btn-navy" style="padding: 15px 32px; font-size: 1.1rem; border: 1px solid rgba(255,255,255,0.4);">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Direct
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Trust -->
+    <section class="section-padding" style="background: #f8fafc; border-top: 1px solid var(--border-color);">
+        <div class="section-header">
+            <span class="tag">Client Feedback</span>
+            <h2>Trusted by Business Owners & Dispatchers</h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Eznl Transporting Limited handled our heavy machinery movement without any delay. Drivers were professional and communicated throughout the trip!"</p>
+                <div class="client-info">
+                    <h5>Engr. Babatunde A.</h5>
+                    <span>Construction Project Lead</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Fair pricing and top-notch reliability. Whenever we have cargo leaving the port, Eznl Limited is always our first phone call."</p>
+                <div class="client-info">
+                    <h5>Chief Kenneth O.</h5>
+                    <span>Import & Export Distributor</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Very dependable haulage service. Goods arrived in perfect condition with zero hassle. I strongly recommend them."</p>
+                <div class="client-info">
+                    <h5>Mrs. Alhaja S. Bello</h5>
+                    <span>Wholesale Produce Supply</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="logo">
+                    <div class="logo-icon" style="background: var(--accent-amber); color: var(--primary-navy);">
+                        <i class="fa-solid fa-truck-moving"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1 style="color: var(--white);">EZNL</h1>
+                        <span>TRANSPORTING LTD</span>
+                    </div>
+                </div>
+                <p>Eznl Transporting Limited provides nationwide freight, haulage, heavy equipment logistics, and corporate transport contracts across all states with maximum security and efficiency.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#calculator">Get Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Truck Services</h4>
+                <ul>
+                    <li><a href="#">Flatbed Haulage</a></li>
+                    <li><a href="#">30 Ton Tippers</a></li>
+                    <li><a href="#">Covered Box Trucks</a></li>
+                    <li><a href="#">Heavy Equipment</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact Dispatch</h4>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px; font-size: 0.9rem;"><i class="fa-solid fa-phone" style="color: var(--accent-amber);"></i> 08037131524</p>
+                <p style="color: rgba(255,255,255,0.7); margin-bottom: 10px; font-size: 0.9rem;"><i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> 08037131524</p>
+                <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;"><i class="fa-solid fa-clock" style="color: var(--accent-amber);"></i> Monday - Sunday: 24 Hours</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eznl Transporting Limited. All rights reserved.</p>
+            <p>Designed for Maximum Business Growth</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons for Easy Contact -->
+    <div class="floating-actions">
+        <a href="https://wa.me/2348037131524?text=Hello%20Eznl%20Transporting%20Limited,%20I%20want%20to%20inquire%20about%20your%20haulage%20services." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:08037131524" class="float-btn float-phone" title="Call Direct">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Calculate Estimate Function
+        function calculateEstimate() {
+            const weight = document.getElementById('weight').value || 1;
+            const truckType = document.getElementById('truckType').value;
+            let baseRate = 120000;
+
+            if (truckType === 'trailer') baseRate = 180000;
+            if (truckType === 'tipper') baseRate = 140000;
+            if (truckType === 'box') baseRate = 95000;
+
+            const estimatedCost = baseRate + (weight * 3500);
+            const formattedMin = new Intl.NumberFormat().format(estimatedCost);
+            const formattedMax = new Intl.NumberFormat().format(estimatedCost * 1.25);
+
+            document.getElementById('estimatedPrice').innerText = `₦${formattedMin} - ₦${formattedMax}`;
+        }
+
+        // WhatsApp Quote Direct Routing
+        function sendWhatsAppQuote() {
+            const pickup = document.getElementById('pickup').value;
+            const destination = document.getElementById('destination').value;
+            const truckType = document.getElementById('truckType').options[document.getElementById('truckType').selectedIndex].text;
+             const weight = document.getElementById('weight').value;
+
+            if(!pickup || !destination) {
+                alert('Please enter both pickup and destination locations.');
+                return;
+            }
+
+            const message = `Hello Eznl Transporting Limited! I would like to get a final price quote:\n\n📍 *Pickup:* ${pickup}\n🏁 *Destination:* ${destination}\n🚛 *Truck Type:* ${truckType}\n⚖️ *Approx Weight:* ${weight} Tons`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/2348037131524?text=${encodedMessage}`, '_blank');
+        }
+
+        // Fleet Filtering
+        function filterFleet(category) {
+            const buttons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.fleet-card');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize Calculation on Load
+        calculateEstimate();
+    </script>
+</body>
+</html>
